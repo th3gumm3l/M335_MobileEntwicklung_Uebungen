@@ -11,5 +11,4 @@ export class NavigationDetailPage implements OnInit {
 
   ngOnInit() {
   }
-
 }

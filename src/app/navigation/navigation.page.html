@@ -5,17 +5,24 @@
 </ion-header>
 
 <ion-content>
-  
-  <ion-button [href]="'/navigation-detail'" expand="block" fill="clear" shape="round">
-    Navigate I
-  </ion-button>
+  <ion-list class="list-container">
+    <ion-item class="list-item">
+      <ion-button class="list-button" [href]="'/navigation-detail'" expand="block" fill="clear" shape="round">
+        Navigate I
+      </ion-button>
+    </ion-item>
 
-  <ion-button (click)="navByUrl()" expand="block" fill="clear" shape="round">
-    Navigate by URL
-  </ion-button>
+    <ion-item class="list-item">
+        <ion-button class="list-button" (click)="navByUrl()" expand="block" fill="clear" shape="round">
+          Navigate by URL
+        </ion-button>
+    </ion-item>
 
-  <ion-button (click)="navWithParam()" expand="block" fill="clear" shape="round">
-    Navigate with Param
-  </ion-button>
+    <ion-item class="list-item">
+      <ion-button class="list-button" (click)="navWithParam()" expand="block" fill="clear" shape="round">
+        Navigate with Param
+      </ion-button>
+    </ion-item>
 
+  </ion-list>
 </ion-content>
