@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Data Binding</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12">
+        Vorname:
+        <ion-input type="text" placeholder="Eingabe" [(ngModel)]="userData.Vorname"></ion-input>
+      </ion-col>
+
+      <ion-col size="12">
+        Nachname:
+        <ion-input type="text" placeholder="Eingabe" [(ngModel)]="userData.Nachname"></ion-input>
+      </ion-col>
+
+      <ion-col size="12">
+        Alter:
+        <ion-input type="number" placeholder="00" [(ngModel)]="userData.Alter"></ion-input>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <p>Mein Name ist {{userData.Vorname}} {{userData.Nachname}} und ich bin {{userData.Alter}} alt!</p>
+</ion-content>
