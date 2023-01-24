@@ -33,6 +33,14 @@ const routes: Routes = [
   {
     path: 'rechner',
     loadChildren: () => import('./rechner/rechner.module').then( m => m.RechnerPageModule)
+  },
+  {
+    path: 'filters',
+    loadChildren: () => import('./filters/filters.module').then( m => m.FiltersPageModule)
+  },
+  {
+    path: '',
+    loadChildren: () => import('./welcome-page/welcome-page.module').then( m => m.WelcomePagePageModule)
   }
 ];
 
