@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Alerts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="presentAlert()">
+    Nickname erfassen
+  </ion-button>
+
+  <p>
+    Ich liebe es {{nickname}} genannt zu werden!
+  </p>
+
+  <ion-button (click)="countUp()" expand="block" fill="clear" shape="round">
+    Click me
+  </ion-button>
+  <p>Er wurde {{counter}} mal gedrückt</p>
+</ion-content>
