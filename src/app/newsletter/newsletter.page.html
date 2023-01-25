@@ -20,10 +20,9 @@
     </div>
 
 
-    <ion-button block color="primary" type="submit" [disabled]="contactForm.invalid">
+    <ion-button (click)="presentToast('bottom')" block color="primary" type="submit" [disabled]="contactForm.invalid">
       Jetzt anmelden!
     </ion-button>
-    
   </form>
 
 </ion-content>

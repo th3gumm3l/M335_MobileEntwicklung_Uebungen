@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-newsletter',
@@ -9,8 +10,9 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class NewsletterPage implements OnInit {
 
   contactForm: any;
+  message: any;
 
-  constructor() { }
+  constructor(private toastController: ToastController) { }
 
   ngOnInit() {
     this.contactForm = new FormGroup(
@@ -21,7 +23,16 @@ export class NewsletterPage implements OnInit {
   }
 
   sendContactForm(){
-    console.log("wurde versendet an folgende E-Mail" + this.contactForm.get('email')?.value);
+    console.log(this.message = "Wurde versendet an folgende E-Mail " + this.contactForm.get('email')?.value);
   }
 
+  async presentToast(position: 'top' | 'middle' | 'bottom') {
+    const toast = await this.toastController.create({
+      message: "Wurde versendet an folgende E-Mail " + this.contactForm.get('email')?.value,
+      duration: 1500,
+      position: position
+    });
+
+    await toast.present();
+  }
 }
