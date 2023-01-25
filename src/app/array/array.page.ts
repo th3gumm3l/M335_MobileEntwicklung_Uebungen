@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-array',
   templateUrl: './array.page.html',
@@ -16,7 +17,6 @@ export class ArrayPage implements OnInit {
 
   ngOnInit() {
   }
-
 }
 
 interface Frucht {
