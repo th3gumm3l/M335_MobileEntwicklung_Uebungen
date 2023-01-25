@@ -16,7 +16,8 @@ export class AppComponent {
     {title:'Data-Binding', url:'/data-binding', icon:'link'},
     {title:'Rechner', url:'/rechner', icon:'calculator'},
     {title:'Filters', url:'/filters', icon:'filter'},
-    {title:'Alerts', url:'/alerts', icon:'alert'}
+    {title:'Alerts', url:'/alerts', icon:'alert'},
+    {title:'Newsletter', url:'/newsletter', icon:'newspaper'}
   ];
   public labels = ['example'];
   constructor() {}

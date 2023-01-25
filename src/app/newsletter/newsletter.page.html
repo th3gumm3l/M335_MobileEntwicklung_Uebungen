@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Newsletter</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Jetzt für unseren neusten Newsletter anmelden</h1>
+  <form [formGroup]="contactForm" (ngSubmit)="sendContactForm()">
+
+    <ion-item>
+      <ion-label position="floating">Deine E-Mail</ion-label>
+      <ion-input formControlName="email" type="text" placeholder="Deine E-Mail" ></ion-input>
+    </ion-item>
+    
+    <div class="formErrors">
+      <ion-item color="danger" *ngIf="!contactForm.controls.email.valid && !contactForm.controls.email.pending && (contactForm.controls.email.dirty)">
+        Sorry, that email is not correct!
+      </ion-item>
+    </div>
+
+
+    <ion-button block color="primary" type="submit" [disabled]="contactForm.invalid">
+      Jetzt anmelden!
+    </ion-button>
+    
+  </form>
+
+</ion-content>
