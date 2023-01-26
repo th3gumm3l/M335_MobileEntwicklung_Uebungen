@@ -50,7 +50,7 @@
 </ion-content>
 
 <ion-footer>
-  <form (submit)="sendMessage()" [formGroup]="chatForm">
+  <form (ngSubmit)="sendMessage()" (keyup.enter)="sendMessage()" [formGroup]="chatForm">
       <ion-toolbar>
           <ion-textarea
               type="text"
