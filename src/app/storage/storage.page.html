@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Storage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="countUp()" expand="block" fill="clear" shape="round">
+    Count Up
+  </ion-button>
+  
+  <p>
+    {{counter}}
+  </p>
+
+  <ion-button (click)="reset()" expand="block" fill="clear" shape="round">
+    Reset
+  </ion-button>
+
+  <ion-button (click)="save()" expand="block" fill="clear" shape="round">
+    Save
+  </ion-button>
+
+  <ion-button (click)="load()" expand="block" fill="clear" shape="round">
+    Load
+  </ion-button>
+
+</ion-content>

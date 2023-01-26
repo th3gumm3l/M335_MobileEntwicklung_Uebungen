@@ -17,7 +17,9 @@ export class AppComponent {
     {title:'Rechner', url:'/rechner', icon:'calculator'},
     {title:'Filters', url:'/filters', icon:'filter'},
     {title:'Alerts', url:'/alerts', icon:'alert'},
-    {title:'Newsletter', url:'/newsletter', icon:'newspaper'}
+    {title:'Newsletter', url:'/newsletter', icon:'newspaper'},
+    {title:'Storage', url:'/storage', icon:'archive'},
+    {title:'Chat', url:'/chat', icon:'chatbubble'},
   ];
   public labels = ['example'];
   constructor() {}
